@@ -32,6 +32,14 @@ public class CA2_Programming {
         this.empNum = nextEmpNum++;
     }
     
+    public void setEmail (String email) {
+        if (email.length ()> 3){
+            this.email = email;
+        } else{
+            System.out.println("Email must be longer than 3 characters.");
+        }
+    }
+    
 
     public String getName() {
         return name;
@@ -42,7 +50,7 @@ public class CA2_Programming {
     }
 
     public int getEmpNum() {
-        return empNum;
+        return nextEmpNum;
     }
 
 
