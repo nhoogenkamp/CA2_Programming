@@ -20,6 +20,11 @@ public class employee {
     public employee() {
         this.name = "Niels Hoogenkamp";
         this.email = "n.hoogenkamp@gmail.com";    
+    }    
+    
+    public employee(String name, String email) {
+        this.name = name;
+        this.email = email;
     }
     
 
