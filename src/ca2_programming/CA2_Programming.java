@@ -9,22 +9,27 @@ package ca2_programming;
  * @author Capitania
  */
 public class CA2_Programming {
+    
+    private static int nextEmpNum = 1;
 
     
-public class employee {
-    private String name;
-    private String email;
-    private int empNum;
-        
+    public class employee {
+    
+        private String name;
+        private String email;
+        private int empNum;
 
+    
+    
     public employee() {
         this.name = "Niels Hoogenkamp";
-        this.email = "n.hoogenkamp@gmail.com";    
+        this.email = "n.hoogenkamp@gmail.com";          
     }    
     
-    public employee(String name, String email) {
+    public employee(String name, String email, int empNum) {
         this.name = name;
         this.email = email;
+        this.empNum = nextEmpNum++;
     }
     
 
@@ -32,8 +37,18 @@ public class employee {
         return name;
         
     }
-        
-        
+    public String getEmail() {
+        return email;
     }
-    
+
+    public int getEmpNum() {
+        return empNum;
+    }
+
+
+    }
 }
+        
+
+    
+
