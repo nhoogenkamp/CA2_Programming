@@ -10,11 +10,25 @@ package ca2_programming;
  */
 public class CA2_Programming {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    
+public class employee {
+    private String name;
+    private String email;
+    private int empNum;
+        
+
+    public employee() {
+        this.name = "Niels Hoogenkamp";
+        this.email = "n.hoogenkamp@gmail.com";    
+    }
+    
+
+    public String getName() {
+        return name;
+        
+    }
+        
+        
     }
     
 }
