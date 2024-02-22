@@ -19,19 +19,19 @@ public class CA2_Programming {
         private String email;
         private int empNum;
 
-    
+      public employee(String name, String email, int empNum) {
+        this.name = name;
+        this.email = email;
+        this.empNum = nextEmpNum++;
+    }
+      
     
     public employee() {
         this.name = "Niels Hoogenkamp";
         this.email = "n.hoogenkamp@gmail.com";          
     }    
     
-    public employee(String name, String email, int empNum) {
-        this.name = name;
-        this.email = email;
-        this.empNum = nextEmpNum++;
-    }
-    
+
     public void setEmail (String email) {
         if (email.length ()> 3){
             this.email = email;
