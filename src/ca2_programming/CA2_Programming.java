@@ -52,11 +52,12 @@ public class CA2_Programming {
     public int getEmpNum() {
         return nextEmpNum;
     }
-
-
+    }
+    
+    public static int getNextEmpNum() {
+        return nextEmpNum++;
     }
 }
-        
 
     
 
