@@ -19,21 +19,22 @@ public class CA2_Programming {
         private String email;
         private int empNum;
         
-        
-    public employee(String name, String email, int empNum) {
-        this.name = name;
-        this.email = email;
-        this.empNum = nextEmpNum;
-        
-        
-    }
-          
-            
+                    
     public employee() {
         this.name = "Niels Hoogenkamp";
         this.email = "n.hoogenkamp@gmail.com";     
         this.empNum = nextEmpNum++;
     }    
+
+        
+    public employee(String name, String email, int empNum) {
+        this.name = name;
+        this.email = email;
+        this.empNum = empNum;
+        nextEmpNum++;
+        
+    }
+          
 
 
 
@@ -54,13 +55,13 @@ public class CA2_Programming {
         return email;
     }
 
-    public int getNextEmpNum() {
-        return nextEmpNum;
+    public int getEmpNum() {
+        return empNum;
     }
     }
     
     public static int getNextEmpNum() {
-        return nextEmpNum++;
+        return nextEmpNum;
     }
 }
 

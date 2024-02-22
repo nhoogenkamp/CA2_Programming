@@ -26,7 +26,7 @@ public class EmployeeTest {
         projectGroup.add(emp2);
         projectGroup.add(emp3);
  
-        System.out.println(emp2.getNextEmpNum());
+        System.out.println(emp2.getEmpNum());
         System.out.println("Value of vaiable NextEmpNum: " + CA2_Programming.getNextEmpNum());
        
    
