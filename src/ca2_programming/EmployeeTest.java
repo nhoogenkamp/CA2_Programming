@@ -25,8 +25,18 @@ public class EmployeeTest {
         projectGroup.add(emp1);
         projectGroup.add(emp2);
         projectGroup.add(emp3);
+        
+        int m = 0;
+        System.out.println("Employees with an employee number above " + m + " are: " );
+        for (CA2_Programming.employee emp :projectGroup){
+            if (emp.getEmpNum()> m ){
+                System.out.println(emp.getName());
+            } else {
+                System.out.println("There are no employees with a employee number that high" );
+            }
+        }
  
-        System.out.println(emp2.getEmpNum());
+        
         System.out.println("Value of vaiable NextEmpNum: " + CA2_Programming.getNextEmpNum());
        
    
