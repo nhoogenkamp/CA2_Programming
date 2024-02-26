@@ -17,14 +17,17 @@ public class Company {
     
     public Company () {
         this.companyName = "Buckley";
-        this.staff = new ArrayList();     
+        this.staff = new ArrayList<>();     
     }
         
     public Company (String companyName) {
         this.companyName = companyName;
-        this.staff = new ArrayList();     
+        this.staff = new ArrayList<>();     
     }       
     
+    public void addNewStaff(CA2_Programming.employee emp){
+        staff.add(emp);
+    }
     
     
     
