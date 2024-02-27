@@ -17,7 +17,6 @@ public class EmployeeTest {
         employee emp3 = new employee ("Tom Thumb" , "tt@gmail.com");
         
         employee[] projectGroup = {emp1, emp2, emp3}; 
-    
         
         
      
@@ -32,9 +31,8 @@ public class EmployeeTest {
         }
  
         
-        System.out.println("Value of variable NextEmpNum: " + CA2_Programming.getNextEmpNum());
+        System.out.println("Value of vaiable NextEmpNum: " + CA2_Programming.getNextEmpNum());
        
-   
     }
     
 }
