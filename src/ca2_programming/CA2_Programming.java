@@ -13,7 +13,7 @@ public class CA2_Programming {
     private static int nextEmpNum = 1;
 
     
-    public class employee {
+    public static class employee {
     
         private String name;
         private String email;
@@ -27,17 +27,27 @@ public class CA2_Programming {
     }    
 
         
-    public employee(String name, String email, int empNum) {
+    public employee(String name, String email) {
         this.name = name;
         this.email = email;
-        this.empNum = empNum;
-        nextEmpNum++;
+        this.empNum = nextEmpNum++;
+        
         
     }
-          
+              
 
-
-
+    public String getName() {
+        return name;
+        
+    }
+    public void setName (String name){
+        this.name= name;
+    }
+    
+    public String getEmail() {
+        return email;
+    }
+    
     public void setEmail (String email) {
         if (email.length ()> 3){
             this.email = email;
@@ -46,17 +56,11 @@ public class CA2_Programming {
         }
     }
     
-
-    public String getName() {
-        return name;
-        
-    }
-    public String getEmail() {
-        return email;
-    }
-
     public int getEmpNum() {
         return empNum;
+    }
+    public void setEmpNum (int empNum){
+        this.empNum = empNum;
     }
     }
     
