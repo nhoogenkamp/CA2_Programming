@@ -4,7 +4,9 @@
  */
 package ca2_programming;
 
-import ca2_programming.CA2_Programming.employee;
+import ca2_programming.CA2_Programming.employee;       
+import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -27,9 +29,19 @@ public class EmployeeTest {
                 System.out.println("There are no employees with a employee number that high" );
             }
         }    
-        System.out.println("Value of vaiable NextEmpNum: " + CA2_Programming.getNextEmpNum());
-       
+        System.out.println("Value of variable NextEmpNum: " + CA2_Programming.getNextEmpNum());
+        
+        
+        
+        try{
+        Scanner scanner = new Scanner (System.in);
+        ArrayList<CA2_Programming.employee> staff = new ArrayList<>();
+        ManagerConsole.login (scanner, staff, projectGroup);
+        scanner.close();
+        }catch (Exception e){
+            e.printStackTrace();
+
+        }
     }
-    
-    
+   
 }
