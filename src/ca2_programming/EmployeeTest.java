@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- *
+ * My github link: https://github.com/nhoogenkamp/CA2_Programming/blob/main/src/ca2_programming/EmployeeTest.java
  * @author Capitania
  */
 public class EmployeeTest {
