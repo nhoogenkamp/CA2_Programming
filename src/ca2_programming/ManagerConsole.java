@@ -17,8 +17,9 @@ public class ManagerConsole {
     
     public static void login (Scanner scanner, ArrayList<CA2_Programming.employee>staff, CA2_Programming.employee[] projectGroup) {
         boolean loginCheck = false;
+        int numAttemptsRemaining = 3;
         
-        while (!loginCheck) {
+        do{
             System.out.println("Username: ");
             String Username = scanner.nextLine();
             System.out.println("Password: ");
@@ -29,11 +30,15 @@ public class ManagerConsole {
                 System.out.println("You are now logged in succesfully.");
                 showMenu(scanner, staff, projectGroup);
             }else { 
+                numAttemptsRemaining--;
+                if (numAttemptsRemaining ==0) {
+                System.out.println("Acces denied. No more attempts.");
+            }else{                       
                 System.out.println("Invalid username or password.");
-               
+                }
             }
-        }
-        
+        }while (!loginCheck && numAttemptsRemaining > 0);
+
     }
     private static void showMenu (Scanner scanner, ArrayList<CA2_Programming.employee>staff, CA2_Programming.employee[] projectGroup) {
         System.out.println("Menu");
